@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Primary Button Style */
+.button.primary {
+    background-color: #ff4433;
+    color: white;
+}
+
+.button.primary:hover {
+    background-color: #d83529;
+}
+
+/* Secondary Button Style */
+.button.secondary {
+    background-color: white;
+    color: #ff4433;
+    border: 2px solid #ff4433;
+}
+
+.button.secondary:hover {
+    background-color: #ffebe9;
+}
+
+/* Rating Style */
+.rating {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rating-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.rating-text {
+    color: #333;
+    margin-right: 5px;
+}
+
+.rating-stars {
+    color: #ffcc00;
+    font-size: 16px;
+}

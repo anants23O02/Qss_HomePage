@@ -1,31 +1,17 @@
-/* .video_container{
-  position: relative;
-  width: 100%;
-  height:100%;
-  overflow:hidden;
-}
-.video_container video{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1; 
-  object-fit: cover;
-}
 
-.overlay-content {
-  position: absolute;
-  text-align: center;
-  color: white;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+html, body{
+  overflow-x: hidden;
+}
 .head {
+  display: block;
   background: #181818;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 99;
+  width: 100%;
+  margin: 0px;
+  padding: 0px 20px;
 }
 
 ::-webkit-scrollbar {
@@ -33,21 +19,16 @@
   height: 8px;
 }
 
-/* ::-webkit-scrollbar-track {
-  background-color: #ff0f0f;
-  border-radius: 10px;
-} */
-.container {
-  width: 100%;
-  margin: -5px 0px;
-  padding: 0 20px;
-}
 
 .container-div {
+  margin: 0px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 5px;
+  flex-direction: row;
+   padding-top: 5px;
+ /* padding-bottom: 9px; */
 }
 
 header .logo {
@@ -56,28 +37,23 @@ header .logo {
 }
 
 .logo img {
-  height: 63px;
+  width: 140px;
+  height: 60px;
   float: left;
-  padding-bottom: 5px;
 }
 
 .menu {
-  position: relative;
-  padding: 5px 0px;
+  text-align: center;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 100px;
 }
 
 .navi {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-block: 20px;
-}
-
-.brand-logo {
-  padding-top: 5px;
 }
 
 nav {
@@ -85,39 +61,42 @@ nav {
 }
 
 ul.nav-items {
+  padding: 0px;
+  margin: 0px;
   list-style-type: none;
 }
 
 ul.nav-items > li {
   display: inline-block;
-  padding-top: 4px;
 }
 
 .nav-items li a span {
-  /* letter-spacing: .4px; */
-  font-size: 20px;
-  font-family: sans-serif;
+  font-size: 18px;
 }
 
 ul > li > a {
   color: #fff;
-  font-size: large;
-  padding-left: 28px;
+  font-size: 15px;
   font-weight: 400;
   text-decoration: none;
 }
 
 .active {
-  color: #ff5e5e;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 0px 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: 400;
 }
-
 .btn-nav {
-  margin-right: -60px;
+  margin-left: 20px;
 }
 
 .btn-nav a {
-  /* text-align: center; */
+  text-align: center;
   text-decoration: none;
   font-size: 15px;
   line-height: 21px;
@@ -143,6 +122,7 @@ ul > li > a {
 .btn-nav-ai::before {
   content: "";
   width: 13px;
+  animation: sparx 2s infinite;
   height: 13px;
   border: 3px solid #fff;
   position: absolute;
@@ -152,6 +132,25 @@ ul > li > a {
   bottom: 0;
   margin: auto;
 }
+
+@keyframes sparx{
+  0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 254, 254, 0.8);
+      box-shadow: 0 0 0 0 rgba(255, 254, 254, 0.8);
+  }
+ 
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(254, 253, 253, 0);
+      box-shadow: 0 0 0 20px rgba(254, 253, 253, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 20px rgba(252, 250, 250, 0);
+      box-shadow: 0 0 0 20px rgba(252, 250, 250, 0);
+  }
+}
+
+
+
 .body {
   overflow: hidden;
 }
@@ -165,16 +164,20 @@ ul > li > a {
 }
 
 .overlay-content {
-  top: 50%;
+  top: 25%;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 20px;
+  padding: 0px 15px;
+}
+
+.sec-1-content {
+  padding: 0px 15px;
 }
 
 .text-content {
-  padding: 0px 30px;
+  /* padding: 0px 30px; */
   font-family: "Lato", sans-serif;
   width: 100%;
   color: #fff;
@@ -182,9 +185,108 @@ ul > li > a {
   flex-direction: row;
   font-size: 36px !important;
   line-height: 48px !important;
-  margin-bottom: 20px !important;
+  /* margin-bottom: 20px !important; */
+  font-weight: 700 !important;
   justify-content: center;
 }
+
+.text-animation{
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  color: red;
+  display: flex;
+  flex-direction: row;
+  font-size: 36px !important;
+  line-height: 48px !important;
+  margin-bottom: 20px !important;
+  font-weight: 700 !important;
+  /* justify-content: center; */
+}
+
+.bod{
+  /* font-family: Arial, sans-serif; */
+  display: flex;
+  padding: 30px 15px;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center;
+  height: 100vh; */
+  /* margin: 0; */
+  /* background-color: #f9f9f9; */
+}
+
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  /* transition: background-color 0.3s, color 0.3s; */
+}
+
+/* Primary Button Style */
+.button.primary {
+  font-family: 'Poppins',sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: rgb(248, 73, 73);
+  color: white;
+}
+
+.button.primary:hover {
+  background-color: ;
+}
+
+/* Secondary Button Style */
+.button.secondary {
+  background-color: white;
+  color: red;
+  /* border: 2px solid red; */
+}
+
+.button.secondary:hover {
+  background-color: #ffebe9;
+}
+
+/* Rating Style */
+.rating {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  font-size: 18px;
+  font-family: "Lato",sans-serif;
+  font-weight: 500;
+}
+
+.rating-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.rating-text {
+  color: #333;
+  margin-right: 5px;
+}
+
+.rating-stars {
+  color: #ffcc00;
+  font-size: 16px;
+}
+
+
+
+
 
 .inbox {
   /* display: flex; */
@@ -612,48 +714,106 @@ ul > li > a {
 }
 .section-8-container-3 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* width: 100%; */
-  height: 100%;
-  margin: auto;
+            flex-wrap: wrap;
+            justify-content: center; /* Center all items horizontally */
+            align-items: center; /* Align items vertically */
+            gap: 20px; /* Add space between items */
+            padding: 20px;
 }
 .sec-8-cnt-3-row {
+  flex: 0 1 calc(20% - 20px); /* Ensure consistent width (adjust %) */
+  max-width: 200px; /* Set maximum width for logos */
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  width: calc(100% / 5);
-  height: 100%;
-  text-align: center;
-  margin: auto;
+  align-items: center;
   padding: 10px;
+  box-sizing: border-box; /
   /* justify-content: center; */
 }
 .sec-8-cnt-3-images {
   /* width: 100%;
   height: 100%; */
+
+  flex: 0 1 calc(20% - 20px); /* Each logo takes up 20% of row width */
+  max-width: calc(20% - 20px); /* Ensure logos fit within the 5-column layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 .sec-8-cnt-3-images img {
-  margin: 20px 45px;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
+  max-width: 100%; /* Ensure images fit within the container */
+  height: auto; /* Maintain image aspect ratio */
+  display: block; 
   /* padding: 30px; */
 }
 
 /* section nine starts here */
 
 .section-9-container-1 {
-  box-sizing: border-box;
-  height: 70%;
-  
+  position: relative;
+  background: url('iwan-postel-bg.jpg') no-repeat center center; /* Replace 'background.jpg' with your image URL */
+  background-size: cover; /* Ensures the image covers the entire section */
+  height: 100vh; /* Adjust height as needed */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sec-9-cnt{
+  /* line-height: 43.2; */
+  font-size: 36px;
+  font-family: "Lato",sans-serif;
+  font-weight: 700;
+} 
+
+.sec-9-cnt-1-p{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sec-9-cnt-1{  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: black;
+  width: 840px;
+  height: 280px;
+  background-color: rgb(255
+  , 255, 255,0.57);
+  margin-top: 25px;
 
 }
-.sec-9-cnt-1-image img {
-  height: 80%;
-  width: 100%;
-  object-fit: cover;
+.sec-9-content{
+  margin: auto 0px;
 }
+.sec-9-heading {
+  font-family: 'Poppins',sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+.sec-9-par{
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+} 
+.sec-9-footer{
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+}
+  
 
 /* section ten starts here */
 
