@@ -401,9 +401,11 @@ ul > li > a {
 .box3 span {
   color: red;
 }
-
+.small-box{
+  background-color: white;
+  width: 227px;
+}
 .button3 {
-  /* display: inline-block; */
   margin-top: -5px;
   padding: 10px 20px;
   color: red;
