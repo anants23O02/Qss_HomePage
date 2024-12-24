@@ -1,77 +1,74 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
-html, body{
-  overflow-x: hidden;
+*{
+  overflow-x:hidden;
+  overflow-y:hidden;
+  
 }
 .head {
-  display: block;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
   background: #181818;
   position: fixed;
-  z-index: 99;
+  justify-content: space-between;
+  z-index: 100;
   width: 100%;
+  height: 79px;
   margin: 0px;
-  padding: 0px 20px;
+  padding: 0px 20px
 }
-
-::-webkit-scrollbar {
-  width: 6px;
-  height: 8px;
-}
-
 
 .container-div {
-  margin: 0px;
-  padding: 0px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: row;
-   padding-top: 5px;
- /* padding-bottom: 9px; */
 }
 
-header .logo {
-  display: block;
-  float: left;
+.qss_logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-direction: column; */
 }
 
 .logo img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 140px;
   height: 60px;
-  float: left;
+  margin-right: 109px;
+  /* float: left; */
+  z-index: 100;
 }
 
 .menu {
-  text-align: center;
   width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 100px;
+  padding: 5px 0px;
 }
 
-.navi {
-  display: flex;
-  justify-content: space-between;
-}
-
-nav {
-  position: relative;
-}
 
 ul.nav-items {
-  padding: 0px;
   margin: 0px;
+  box-sizing: none;
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
+  padding: none;
 }
 
-ul.nav-items > li {
-  display: inline-block;
-}
+
 
 .nav-items li a span {
   font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+  font-weight: 400;
 }
 
 ul > li > a {
@@ -79,20 +76,13 @@ ul > li > a {
   font-size: 15px;
   font-weight: 400;
   text-decoration: none;
+  padding: 20px 15px;
 }
 
-.active {
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 27px;
-  padding: 0px 15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-weight: 400;
-}
-.btn-nav {
-  margin-left: 20px;
+.btn-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .btn-nav a {
@@ -101,15 +91,17 @@ ul > li > a {
   font-size: 15px;
   line-height: 21px;
   background-color: red;
-  padding-left: 57px;
+  padding-left: 65px;
   padding-top: 15px;
   padding-bottom: 13px;
   padding-right: 20px;
-  letter-spacing: 0.8px;
-  display: inline-block;
+  font-family: 'Poppins',sans-serif;
+  /* letter-spacing: 0.8px; */
+  /* display: inline-block; */
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 2px;
+  /* letter-spacing: 0.8px; */
 }
 
 .btn-nav a span {
@@ -121,16 +113,16 @@ ul > li > a {
 
 .btn-nav-ai::before {
   content: "";
-  width: 13px;
+  width: 20px;
   animation: sparx 2s infinite;
-  height: 13px;
+  height: 20px;
   border: 3px solid #fff;
   position: absolute;
-  right: 150px;
+  right: 175px;
   border-radius: 50%;
   top: 0;
   bottom: 0;
-  margin: auto;
+  margin: auto auto;
 }
 
 @keyframes sparx{
@@ -149,35 +141,41 @@ ul > li > a {
   }
 }
 
+.section-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 
-
-.body {
-  overflow: hidden;
 }
 .video_container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 0;
   margin: 0;
   position: relative;
-  height: 100%;
+  
+  /* height: 100%; */
 }
 
 .overlay-content {
-  top: 25%;
+  margin-top: -80px;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.sec-1-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0px 15px;
 }
 
-.sec-1-content {
-  padding: 0px 15px;
-}
-
 .text-content {
-  /* padding: 0px 30px; */
   font-family: "Lato", sans-serif;
   width: 100%;
   color: #fff;
@@ -185,7 +183,6 @@ ul > li > a {
   flex-direction: row;
   font-size: 36px !important;
   line-height: 48px !important;
-  /* margin-bottom: 20px !important; */
   font-weight: 700 !important;
   justify-content: center;
 }
@@ -200,25 +197,17 @@ ul > li > a {
   line-height: 48px !important;
   margin-bottom: 20px !important;
   font-weight: 700 !important;
-  /* justify-content: center; */
 }
 
 .bod{
-  /* font-family: Arial, sans-serif; */
   display: flex;
   padding: 30px 15px;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center;
-  height: 100vh; */
-  /* margin: 0; */
-  /* background-color: #f9f9f9; */
 }
 
 
 .button-container {
   display: flex;
-  /* gap: 20px; */
   align-items: center;
 }
 
@@ -227,7 +216,6 @@ ul > li > a {
   font-size: 16px;
   border: none;
   border-radius: 3px;
-  /* transition: background-color 0.3s, color 0.3s; */
 }
 
 /* Primary Button Style */
@@ -245,7 +233,6 @@ ul > li > a {
 .button.secondary {
   background-color: white;
   color: red;
-  /* border: 2px solid red; */
 }
 
 .button.secondary:hover {
@@ -261,7 +248,6 @@ ul > li > a {
   background-color: white;
   padding: 10px 15px;
   border-radius: 3px;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   font-size: 18px;
   font-family: "Lato",sans-serif;
   font-weight: 500;
@@ -278,12 +264,7 @@ ul > li > a {
   font-size: 16px;
 }
 
-
-
-
-
 .inbox {
-  /* display: flex; */
   display: flex;
   flex-direction: row;
   padding: auto;
@@ -301,15 +282,13 @@ ul > li > a {
   margin: auto;
   color: white;
   perspective: 1000px;
-  /* border-radius: 0; */
   background-color: #232323;
-  /* font-size: xx-large; */
   height: 190px;
   width: 313px;
 }
 
 .flip-card{
-  transform-style: preserve-3d; /* Enables 3D transformation of child elements */
+  transform-style: preserve-3d;
   transition: transform 0.6s; 
 }
 .button-big :hover .flip-card{ 
@@ -324,7 +303,6 @@ ul > li > a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   font-family: "Lato", sans-serif;
   display: block;
   font-size: 50px;
@@ -362,8 +340,6 @@ ul > li > a {
 }
 
 .Background-image-over3 img {
-  /* background: url("become-partner-img.jpg") no-repeat center center/cover; */
-  /* height: 500px; */
   width: 100%;
   height: 100%;
 }
@@ -371,53 +347,38 @@ ul > li > a {
 .text-image-over {
   display: flex;
   justify-content: center;
-  padding: 15px 20px;
-  margin: 20px 0px;
+   padding: 55px 45px; 
   color: black;
   position: absolute;
-  top: 220px;
-  margin: 0 auto;
-  left: 160px;
+  top: 272px;
   background-color: white;
-  /* width: 130%; */
-  height: 500px;
+  height: 420px;
   box-shadow: 0px 10px 5px #cdcdcd;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   width: 990px;
-  /* max-width: 800px; */
-  /* border-radius: 8px; */
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .content3 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.p {
-  font-size: medium;
-}
-
-.box3 span {
-  color: red;
-}
-.small-box{
-  background-color: white;
-  width: 227px;
+  /* justify-content: center; */
 }
 .button3 {
-  margin-top: -5px;
-  padding: 10px 20px;
+  /* width: 100%; */
+  /* display: inline-block; */
+  display: flex;
   color: red;
   background-color: white;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 1rem;
   border-color: red;
   box-shadow: none;
+  border: 2px solid red ;
 }
 
-.button :hover {
+.button :hover{
   background-color: red;
   color: white;
 }
@@ -432,8 +393,6 @@ ul > li > a {
   text-align: center;
 }
 
-.sec-4-cnt-2 {
-}
 .section-4-container-2 {
   margin: 45px 0px;
   /* margin-top: 45px; */
@@ -613,7 +572,7 @@ ul > li > a {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  /* padding: 50px 20px; */
+  
   color: #e7e7e7 !important;
   margin-bottom: 60px;
 }
@@ -626,25 +585,19 @@ ul > li > a {
   align-items: stretch;
 }
 .section-7-container-2 {
-  /* align-items: center; */
   border-radius: 3%;
   display: flex;
   flex-direction: column;
   background-color: #232323;
   width: 400px;
   height: 300px;
-  /* padding: 50px 20px; */
   padding: 0px 20px;
   padding-top: 50px;
   color: white;
   margin: 0px 20px;
   justify-content: center;
-  /* padding: auto; */
+ 
 }
-/* 
-.section-7-container-2 {
-    display: grid;
-} */
 
 .section-7-container-2 p {
   font-size: 20px;
@@ -657,9 +610,6 @@ ul > li > a {
   line-height: 26px;
 }
 
-/* .section-7-container-2{
-    padding: auto;
-} */
 .section-7-box-image {
   text-align: center;
   display: flex;
@@ -671,10 +621,7 @@ ul > li > a {
 }
 .section-7-box-image img {
   display: flex;
-  /* width: 100px; */
-  /* height:50%; */
   object-fit: cover;
-  /* padding-left: 45px; */
 }
 .section-7-dots {
   background: transparent;
@@ -721,49 +668,44 @@ ul > li > a {
 .section-8-container-3 {
   display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Center all items horizontally */
-            align-items: center; /* Align items vertically */
-            gap: 20px; /* Add space between items */
+            justify-content: center; 
+            align-items: center; 
+            gap: 20px; 
             padding: 20px;
 }
 .sec-8-cnt-3-row {
-  flex: 0 1 calc(20% - 20px); /* Ensure consistent width (adjust %) */
-  max-width: 200px; /* Set maximum width for logos */
+  flex: 0 1 calc(20% - 20px); 
+  max-width: 200px; 
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  box-sizing: border-box; /
-  /* justify-content: center; */
+  box-sizing: border-box; 
 }
 .sec-8-cnt-3-images {
-  /* width: 100%;
-  height: 100%; */
-
-  flex: 0 1 calc(20% - 20px); /* Each logo takes up 20% of row width */
-  max-width: calc(20% - 20px); /* Ensure logos fit within the 5-column layout */
+  flex: 0 1 calc(20% - 20px); 
+  max-width: calc(20% - 20px);
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
 .sec-8-cnt-3-images img {
-  max-width: 100%; /* Ensure images fit within the container */
-  height: auto; /* Maintain image aspect ratio */
+  max-width: 100%; 
+  height: auto; 
   display: block; 
-  /* padding: 30px; */
 }
 
 /* section nine starts here */
 
 .section-9-container-1 {
   position: relative;
-  background: url('iwan-postel-bg.jpg') no-repeat center center; /* Replace 'background.jpg' with your image URL */
-  background-size: cover; /* Ensures the image covers the entire section */
-  height: 100vh; /* Adjust height as needed */
+  background: url('iwan-postel-bg.jpg') no-repeat center center; 
+  background-size: cover; 
+  height: 100vh; 
   display: flex;
-  align-items: center; /* Centers content vertically */
-  justify-content: center; /* Centers content horizontally */
+  align-items: center; 
+  justify-content: center; 
   color: white;
   text-align: center;
   flex-direction: column;
@@ -771,7 +713,6 @@ ul > li > a {
 }
 
 .sec-9-cnt{
-  /* line-height: 43.2; */
   font-size: 36px;
   font-family: "Lato",sans-serif;
   font-weight: 700;
@@ -844,8 +785,8 @@ ul > li > a {
     ),
     url("engagement-models-cta-banner (1).jpg");
 
-  background-size: cover; /* Ensures the image covers the entire area */
-  background-position: center; /* Centers the image */
+  background-size: cover; 
+  background-position: center; 
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -876,15 +817,11 @@ ul > li > a {
 }
 .sec-10-cnt-1-btn a {
   display: inline-block;
-  /* flex-direction: row;
-  justify-content: center; */
   text-align: center;
   text-decoration: none;
   color: #e7e7e7;
   font-weight: bold;
-  /* font-size: 1rem; */
   border: 1px solid rgba(255, 255, 255, 0.6);
-  /* text-decoration: none; */
   border-color: #e7e7e7;
   border-radius: 8px;
   padding: 10px 20px;
@@ -1030,7 +967,6 @@ font-family: sans-serif;
 }
 
 .box1-c1-img {
-  /* height: 50px; */
   width: 287px;
   margin-bottom: 10px;
 }
@@ -1038,9 +974,6 @@ font-family: sans-serif;
 .box1-c1 {
   display: flex;
   flex-direction: column;
-
-  /* padding-inline: 15px; */
-  /* gap: 33px; */
 }
 
 .box1-c1 p {
@@ -1180,7 +1113,6 @@ font-family: sans-serif;
   padding-block: 15px;
 }
 .last img {
-  /* width: 108px; */
   height: 40px;
 }
 .last-content {
