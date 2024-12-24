@@ -1,12 +1,29 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-
 *{
-  overflow-x:hidden;
-  overflow-y:hidden;
-  
+  overflow: overlay;
 }
+.body{
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+body::-webkit-scrollbar {
+  position: absolute;
+  width: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
 .head {
+  overflow-y: none;
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
@@ -63,7 +80,6 @@ ul.nav-items {
 }
 
 
-
 .nav-items li a span {
   font-size: 18px;
   line-height: 27px;
@@ -96,12 +112,9 @@ ul > li > a {
   padding-bottom: 13px;
   padding-right: 20px;
   font-family: 'Poppins',sans-serif;
-  /* letter-spacing: 0.8px; */
-  /* display: inline-block; */
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 2px;
-  /* letter-spacing: 0.8px; */
 }
 
 .btn-nav a span {
@@ -155,8 +168,6 @@ ul > li > a {
   padding: 0;
   margin: 0;
   position: relative;
-  
-  /* height: 100%; */
 }
 
 .overlay-content {
@@ -227,7 +238,10 @@ ul > li > a {
   color: white;
 }
 
-
+.button-primary :hover {
+  background-color: white;
+  color: red;
+}
 
 /* Secondary Button Style */
 .button.secondary {
@@ -235,6 +249,11 @@ ul > li > a {
   color: red;
 }
 
+
+.button-primary:hover{
+  background-color: white;
+  color:red;
+}
 .button.secondary:hover {
   background-color: #ffebe9;
 }
@@ -264,6 +283,8 @@ ul > li > a {
   font-size: 16px;
 }
 
+/* second section of the web page */
+
 .inbox {
   display: flex;
   flex-direction: row;
@@ -286,14 +307,16 @@ ul > li > a {
   height: 190px;
   width: 313px;
 }
-
 .flip-card{
   transform-style: preserve-3d;
   transition: transform 0.6s; 
+  transform: rotateX(180deg);
+
 }
 .button-big :hover .flip-card{ 
-  transform: rotateY(180deg);
+  transform: rotateX(0deg);
 }
+
 
 .buttonbig-content {
   padding: 0px 12px;
@@ -339,11 +362,13 @@ ul > li > a {
   justify-content: center;
 }
 
+
+/* section four of the web page */
+
 .Background-image-over3 img {
   width: 100%;
   height: 100%;
 }
-
 .text-image-over {
   display: flex;
   justify-content: center;
@@ -468,12 +493,10 @@ ul > li > a {
   flex-direction: row;
   padding-top: 60px;
   padding: 0px 60px;
-  /* padding-bottom: 100px; */
 }
 
 .button5 {
-  /* display: inline-block; */
-  /* margin-top: -20px; */
+  
   display: flex;
   flex-direction: row;
   padding: 10px 20px;
