@@ -258,6 +258,12 @@ ul.menu-items {
   transition: all 0.3s ease-in-out
 }
 
+.button-container a:hover{
+  background: white;
+  color: #ec3636;
+  border: 1px solid white;
+}
+
 .button-container a.button-container-white{
   background: #ffffff;
     color: #ec3636;
@@ -280,128 +286,195 @@ ul.menu-items {
 
 /* second section of the web page */
 
-.inbox {
+.cards-section {
   display: flex;
   flex-direction: row;
-  padding: auto;
   align-items: center;
-  padding: 25px;
-  font-size: x-small;
+  padding: 25px 15px;
   background-color: #181818;
+  justify-content: space-between;
+  margin-top: -6px;
 }
 
-.button-big {
+.cards {
+  display: flex;
+  height: 190px;
+  width: 313px;
+  perspective: 1000px; 
+  /*  */
+
+
+}
+.card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  background-color: #232323;
+}
+.cards:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  /* border: 1px solid black; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.card-front {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin: auto;
   color: white;
-  perspective: 1000px;
   background-color: #232323;
-  height: 190px;
-  width: 313px;
-}
-.flip-card{
-  transform-style: preserve-3d;
-  transition: transform 0.6s; 
-  transform: rotateX(180deg);
-
-}
-.button-big :hover .flip-card{ 
-  transform: rotateX(0deg);
+  transform: rotateY(0deg);
+  z-index: 1;
 }
 
-
-.buttonbig-content {
-  padding: 0px 12px;
-}
-
-.section2-content1 {
+.card-back {
+  backface-visibility: hidden !important; 
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  margin: auto;
+  color: white;
+  background-color: #ec3636;
+  transform: rotateY(180deg); 
+  z-index: 2; 
+}
+
+.card-heading {
   font-family: "Lato", sans-serif;
-  display: block;
   font-size: 50px;
   font-weight: 700;
   line-height: 60px;
   margin-bottom: 7px;
 }
 
-.section2-content2 {
-  display: block;
+.card-description {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  font-size: inherit;
-  display: block;
-  margin-top: -12px;
   font-size: 16px;
   font-weight: 700;
+  margin-top: -12px;
 }
 
-.section2-content3 {
-  display: block;
+.card-text {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
 
-.section3-container {
+.card-back{
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+
+.experience-section {
   background-color: #ffffff;
   margin: auto auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 25px;
+  margin-top: 40px;
+  margin-bottom: 60px;
   justify-content: center;
 }
-
-
-/* section four of the web page */
-
-.Background-image-over3 img {
+.Background-image-over img {
   width: 100%;
   height: 100%;
 }
-.text-image-over {
+.text-over-image {
   display: flex;
   justify-content: center;
-   padding: 55px 45px; 
-  color: black;
+  padding: 55px 45px; 
+  margin-left: 123px;
   position: absolute;
   top: 272px;
   background-color: white;
-  height: 420px;
+  height: 477px;
+  width: 1080px;
   box-shadow: 0px 10px 5px #cdcdcd;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  width: 990px;
   flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 40px;
 }
-.content3 {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-}
-.button3 {
-  /* width: 100%; */
-  /* display: inline-block; */
-  display: flex;
-  color: red;
-  background-color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  border-color: red;
-  box-shadow: none;
-  border: 2px solid red ;
+.redbox{
+  display:flex;
+    flex: 0 0 360px;
+    width: 360px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    border: 16px solid #ec3636;
+    height: 235px;
+    /* position: absolute; */
 }
 
-.button :hover{
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* justify-content: center; */
+  /* justify-content: center; */
+}
+
+.experience-title{
+  font-size: 36px;
+  font-family: 'Lato',sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+.experience-subtitle{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato',sans-serif;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+.experience-text{
+  color: rgb(39,19,19);
+  font-family: 'Poppins',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+.partner-button{
+  text-align: center;
+  height: 42px;
+  width: 204.543px;
+  border: 1px solid rgb(236, 54, 54);
+  border-radius: 4px;
+  padding: 10px 20px;
+  /* background-color: red; */
+  
+}
+.partner-button :hover{
   background-color: red;
   color: white;
 }
+.partner-button a{
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+  color: rgb(236, 54, 54);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 /* ends here */
 
 /* section 4 css */
@@ -632,41 +705,30 @@ ul.menu-items {
   height: 24px !important;
 } */
 
+.awards-section{
+padding: 45px 20px;
+  background-color: black;
+}
 
-
-.section-7-container-1 p {
+.awards-section p {
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  
   color: #e7e7e7 !important;
   margin-bottom: 60px;
 }
-.section-7-img {
+
+
+.awards-cards-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: auto;
-  align-items: stretch;
-}
-.section-7-container-2 {
-  border-radius: 3%;
-  display: flex;
-  flex-direction: column;
-  background-color: #232323;
-  width: 400px;
-  height: 300px;
-  padding: 0px 20px;
-  padding-top: 50px;
-  color: white;
-  margin: 0px 20px;
-  justify-content: center;
- 
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.section-7-container-2 p {
+.awards-cards-container p {
   font-size: 20px;
   font-weight: 700;
   color: #e7e7e7;
@@ -677,14 +739,30 @@ ul.menu-items {
   line-height: 26px;
 }
 
-.section-7-box-image {
-  text-align: center;
+
+.award-cards {
+  border-radius: 3%;
   display: flex;
   flex-direction: column;
+  background-color: #232323;
+  width: 400px;
+  height: 300px;
+  padding: 0px 20px;
+  padding-top: 50px;
+  color: white;
+  /* margin: 0px 20px; */
   justify-content: center;
+ 
+}
+
+
+.award-card-image {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 190px;
-  margin-bottom: 20px;
-  padding-left: 25px;
 }
 .section-7-box-image img {
   display: flex;
