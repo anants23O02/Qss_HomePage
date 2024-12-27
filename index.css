@@ -418,8 +418,30 @@ ul.menu-items {
     justify-content: center;
     border: 16px solid #ec3636;
     height: 235px;
-    /* position: absolute; */
+    position: relative;
 }
+.redbox:before{
+  content: "";
+  background: #fff;
+  width: 230px;
+  height: 16px;
+  top: -16px;
+  /* margin: -32px; */
+  position: absolute;
+  z-index: 1;
+}
+
+.redbox:after{
+  content: "";
+  background: #fff;
+  width: 230px;
+  height: 16px;
+  bottom: -16px;
+  /* margin-top: 48px; */
+  position: absolute;
+  z-index: 1;
+}
+
 
 
 .experience-content {
