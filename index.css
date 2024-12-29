@@ -412,13 +412,29 @@ ul.menu-items {
   display:flex;
     flex: 0 0 360px;
     width: 360px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 10px;
     justify-content: center;
     border: 16px solid #ec3636;
     height: 235px;
     position: relative;
+    gap: 10px;
+}
+
+.redbox-heading{
+  font-family: 'Poppins',sans-serif;
+  font-size: 50px;
+    color: #ec3636;
+    font-weight: 500;
+    line-height: 30px;
+}
+.redbox-text{
+  font-family: "Poppins",sans-serif;
+  font-size: 24px;
+  color: rgb(64,43,48);
+  line-height: 24px;
+  font-weight: 700;
 }
 .redbox:before{
   content: "";
@@ -722,6 +738,135 @@ ul.menu-items {
   color: #fff !important;
   border-radius: 4px in !important;
 }
+
+
+.contact-form-info-content {
+  width: 1020px;
+  height: 394px;
+  padding-inline: 15px;
+}
+
+.contact-form-info-content form {
+  width: 990px;
+  height: 393px;
+}
+
+.contact-form-info-content ul {
+  width: 1020px;
+  height: 196px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-inline: -15px;
+}
+
+.contact-form-info-content ul li {
+  width: 510px;
+  height: 72px;
+  padding: 0 15px 0;
+  list-style: none;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.contact-form-info-content ul li label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #150823;
+  cursor: text;
+  margin-bottom: 5px;
+}
+
+.contact-form-info-content ul li span {
+  color: #ec3636;
+}
+
+.contact-form-info-content ul li span input {
+  height: 44px;
+  padding: 10px 50px 10px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #150823;
+  background: #fff;
+  border: 1px solid #d2d6db;
+  border-radius: 6px;
+  width: 100%;
+  position: relative;
+}
+
+.contact-form-info-content ul li span svg {
+  position: absolute;
+  right: 32px;
+  top: 35px;
+  z-index: 1;
+}
+
+::placeholder {
+  color: #000;
+}
+
+.message-container {
+  width: 1020px;
+  height: 135px;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.message-container label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #150823;
+  cursor: text;
+  margin-bottom: 5px;
+}
+
+.message-container label span {
+  color: #ec3636;
+}
+
+.message-container span input {
+  width: 990px;
+  height: 100px;
+  padding: 10px 50px 10px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #150823;
+  background: #fff;
+  border: 1px solid #d2d6db;
+  border-radius: 6px;
+  position: relative;
+}
+
+.contact-form-foot {
+  width: 1020px;
+  height: 42px;
+
+}
+
+.contact-form-foot a {
+  text-decoration: none;
+  background: #ec3636;
+  padding: 8px 30px;
+  border: 1px solid #ec3636;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.contact-last {
+  width: 1020px;
+  height: 62px;
+  padding-inline: 15px;
+
+}
+
+.contact-last p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #271313;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
 /* .form-submit{
   width: 125.516px !important;
   height: 24px !important;
@@ -776,29 +921,24 @@ padding: 45px 20px;
   justify-content: center;
  
 }
-
-
 .award-card-image {
   display: flex;
   text-align: center;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 190px;
+  width: 170px;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 20px;
 }
-.section-7-box-image img {
+.award-card-image img {
+  width: 100%;
+  height: 100%;
   display: flex;
-  object-fit: cover;
+  flex-direction: column;
+  justify-content: center;
 }
-.section-7-dots {
-  background: transparent;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #e7e7e7;
-  border-radius: 50%;
-  margin-right: 6px;
-  margin-top: 25px;
-}
+
 
 /* section eight starts here */
 .client-container{
@@ -808,6 +948,7 @@ padding: 45px 20px;
   flex-direction: column;
   padding: 60px 0px;
   margin: auto;
+  height: 600px;
 }
 
 .client-heading h2{
@@ -831,6 +972,45 @@ padding: 45px 20px;
   margin-bottom: 30px;
   color: rgb(63, 43, 48);
 }
+
+.brands-list {
+  width: 1244px;
+  height: 454px;
+  margin-inline: 45px;
+  padding-inline: 15px;
+}
+
+.brands-items {
+  width: 1214px;
+  height: 454px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.brandbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: calc(100% / 5);
+  padding: 15px;
+}
+
+.brandbox-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 10px;
+}
+
+.brandbox-image img {
+  position: relative;
+  max-width: 100%;
+  max-height: 70px;
+}
+
+
 .logos-section{
   display: flex;
   flex-wrap: wrap;
