@@ -886,11 +886,6 @@ ul.menu-items {
   text-align: center;
 }
 
-/* .form-submit{
-  width: 125.516px !important;
-  height: 24px !important;
-} */
-
 .awards-section{
 padding: 45px 20px;
   background-color: black;
@@ -1056,7 +1051,7 @@ padding: 45px 20px;
 }
 /* section nine starts here */
 
-.section-9-container-1 {
+.reviews {
   position: relative;
   background: url('iwan-postel-bg.jpg') no-repeat center center; 
   background-size: cover; 
@@ -1070,19 +1065,19 @@ padding: 45px 20px;
   padding: 20px;
 }
 
-.sec-9-cnt{
+.reviews-heading{
   font-size: 36px;
   font-family: "Lato",sans-serif;
   font-weight: 700;
 } 
 
-.sec-9-cnt-1-p{
+.reviews-description{
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.sec-9-cnt-1{  display: flex;
+.review{  display: flex;
   flex-direction: column;
   text-align: left;
   color: black;
@@ -1093,24 +1088,24 @@ padding: 45px 20px;
   margin-top: 25px;
 
 }
-.sec-9-content{
+.review-content{
   margin: auto 0px;
 }
-.sec-9-heading {
+.review-content-heading {
   font-family: 'Poppins',sans-serif;
   font-size: 24px;
   font-weight: 700;
   margin-left: 25px;
   margin-bottom: 15px;
 }
-.sec-9-par{
+.review-content-para{
   margin-left: 25px;
   margin-bottom: 15px;
   font-family: 'Poppins',sans-serif;
   font-weight: 400;
   font-size: 16px;
 } 
-.sec-9-footer{
+.review-content-footer{
   margin-left: 25px;
   margin-bottom: 15px;
   font-family: 'Poppins',sans-serif;
@@ -1122,7 +1117,7 @@ padding: 45px 20px;
 
 /* section ten starts here */
 
-.section-10-container-1 {
+.Engagement-model {
   /* padding: 100px 0px; */
   display: flex;
   flex-direction: column;
@@ -1132,7 +1127,7 @@ padding: 45px 20px;
   color: #e7e7e7;
   font-family: "Poppins", sans-serif;
 }
-.sec-10-cnt-1-bkimg {
+.Engagement-model-background-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1150,7 +1145,7 @@ padding: 45px 20px;
   height: 100vh;
 }
 
-.sec-10-cnt-1-h {
+.Engagement-model-heading {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1161,7 +1156,7 @@ padding: 45px 20px;
   margin-bottom: 20px;
 }
 
-.sec-10-cnt-1-p {
+.Engagement-model-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1171,10 +1166,10 @@ padding: 45px 20px;
   color: #e7e7e7;
   font-family: "Poppins", sans-serif;
 }
-.sec-10-cnt-1-btn {
+.Engagement-model-button {
   text-align: center;
 }
-.sec-10-cnt-1-btn a {
+.Engagement-model-button a {
   font-family: "Poppins",sans-serif;
   font-size: 18px;
   display: inline-block;
@@ -1188,7 +1183,7 @@ padding: 45px 20px;
   padding: 10px 20px;
 }
 
-.sec-10-cnt-1-btn a:hover {
+.Engagement-model-button a:hover {
   background-color: #e7e7e7;
   color: black;
 }
