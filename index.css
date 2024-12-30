@@ -107,6 +107,10 @@ ul.menu-items {
 
 }
 
+.active:hover{
+  color:red;
+}
+
 .btn-nav{
   width: 197.312px;
   height: 69px;
@@ -350,7 +354,10 @@ ul.menu-items {
   transform: rotateY(180deg); 
   z-index: 2; 
 }
-
+.card-back p{
+  font-size: 14px !important;
+  padding: 0px 20px;
+}
 .card-heading {
   font-family: "Lato", sans-serif;
   font-size: 50px;
@@ -500,9 +507,12 @@ ul.menu-items {
   /* background-color: red; */
   
 }
-.partner-button :hover{
+.partner-button:hover {
   background-color: red;
   color: white;
+}
+.partner-button:hover a{
+  color:white
 }
 .partner-button a{
   text-decoration: none;
@@ -516,7 +526,7 @@ ul.menu-items {
 /* ends here */
 
 /* section 4 css */
-.section-4-container-1 {
+.services-section {
   padding: 60px 23px;
   margin-top: 250px;
   background-color: rgba(4, 1, 39, 255);
@@ -524,7 +534,7 @@ ul.menu-items {
   text-align: center;
 }
 
-.section-4-container-2 {
+.services-text {
   margin: 45px 0px;
   /* margin-top: 45px; */
   display: flex;
@@ -533,7 +543,7 @@ ul.menu-items {
   flex-direction: row;
   padding-right: 20px;
 }
-.section-4-container-3 {
+.services-text-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -541,14 +551,14 @@ ul.menu-items {
   text-align: left;
 }
 
-.section-4-container-3 h2 {
+.services-text-content h2 {
   margin-bottom: 15px;
 }
 
-.section-4-container-3 p {
+.services-text-content p {
   margin-bottom: 15px;
 }
-.section-4-image img {
+.services-image img {
   margin: 0px 0px 0px 0px;
   height: 345px;
   width: 670px;
@@ -562,14 +572,21 @@ ul.menu-items {
   color: white;
   border-color: white;
   border-radius: 30%;
-  background-color: black;
+  background-color: rgba(4, 1, 39, 255);
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
 }
 
+.services-section button:hover{
+  background-color: white;
+  color: black;
+}
 /* section four ends here */
-.section-5-container-1 {
+
+
+
+.sucess-stories {
   padding: 60px 0px;
   /* margin-top: 250px;    */
   background-color: white;
@@ -577,11 +594,11 @@ ul.menu-items {
   text-align: center;
 }
 
-.sec-5-cnt-2 {
+.sucess-stories-heading {
   margin: 0px 113px;
   padding: 0px 15px;
 }
-.section-5-image img {
+.sucess-stories-image img {
   border-radius: 15%;
   margin: 0px 10px 45px 0px;
   height: 560px;
@@ -592,7 +609,8 @@ ul.menu-items {
   gap: 30px;
 }
 
-.section-5-container-2 {
+
+.sucess-stories-content{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -618,7 +636,7 @@ ul.menu-items {
   font-family: "Lato", sans-serif;
 }
 
-.button5 :hover {
+.button5:hover {
   background-color: rgb(236, 54, 54);
   color: white;
 }
@@ -644,14 +662,15 @@ ul.menu-items {
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 50px;
-  height: 666px;
+  height: 800px;
   background-color: white;
   position: relative;
   top: 154px;
   margin-inline:132px 133px;
   box-shadow: 0px 10px 5px #aaaaaa;
 }
-.form-content {
+ 
+.form-heading {
   padding-left: 4px;
   padding-right: 5px;
   display: flex;
@@ -662,7 +681,7 @@ ul.menu-items {
   /* padding-top: 25px; */
 }
 
-.form-content h5{
+.form-heading h5{
   font-size: 36px;
   font-family: 'Lato',sans-serif;
   font-weight: 700;
@@ -671,11 +690,11 @@ ul.menu-items {
   line-height: 1.1;
   text-align: center;
 }
-.form-content h5 span {
+.form-heading h5 span {
   color: red;
   /* font-weight: bolder; */
 }
-.form-content p{
+.form-heading p{
   font-size: 18px;
   font-family: 'Lato',sans-serif;
   font-weight: 400;
@@ -804,14 +823,14 @@ ul.menu-items {
   color: #000;
 }
 
-.message-container {
+.message {
   width: 1020px;
   height: 135px;
   list-style: none;
   margin-bottom: 24px;
 }
 
-.message-container label {
+.message label {
   font-size: 14px;
   font-weight: 400;
   color: #150823;
@@ -819,11 +838,11 @@ ul.menu-items {
   margin-bottom: 5px;
 }
 
-.message-container label span {
+.message label span {
   color: #ec3636;
 }
 
-.message-container span input {
+.message span input {
   width: 990px;
   height: 100px;
   padding: 10px 50px 10px 15px;
@@ -842,7 +861,7 @@ ul.menu-items {
 
 }
 
-.contact-form-foot a {
+.contact-foot a {
   text-decoration: none;
   background: #ec3636;
   padding: 8px 30px;
@@ -851,14 +870,14 @@ ul.menu-items {
   border-radius: 4px;
 }
 
-.contact-last {
+.contact-foot-last {
   width: 1020px;
   height: 62px;
   padding-inline: 15px;
 
 }
 
-.contact-last p {
+.contact-foot-last p {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -949,6 +968,8 @@ padding: 45px 20px;
   padding: 60px 0px;
   margin: auto;
   height: 600px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .client-heading h2{
